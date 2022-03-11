@@ -1,5 +1,50 @@
-body{
-    height: 2000px;
-    background: url("../img/background.jpg") no-repeat;
-    background-color: #0A1C26;
+body {
+  height: 2000px;
+  background: url("../img/background.jpg") no-repeat;
+  background-color: #0a1c26;
+}
+main {
+  background-color: #0a1c26;
+}
+article {
+  margin: 0 12% 15% 12%;
+  height: 720px;
+  display: flex;
+  justify-content: space-between;
+  .pair {
+    margin-left: 70px;
+  }
+  .cardArticle {
+    width: 70%;
+    .cardArticleNumber {
+      font-size: 220px;
+      font-family: "Chronicle Display";
+      font-weight: bold;
+      position: relative;
+      color: #ffffff1a;
+    }
+    .cardArticleSubTitle {
+      color: #fbd784;
+    }
+    
+
+    .cardArticleContentPair {
+      margin: -150px 140px;
+      color: #fff;
+    }
+    .cardArticleContentImpair {
+        margin: -150px 140px;
+        color: #fff;
+      }
+    .cardArticleTitle {
+      font-size: 64px;
+      margin: 0;
+    }
+    .cardArticleImage {
+      width: 30%;
+    }
+    .cardArticleLink {
+      color: #fbd784;
+    }
+  }
 }

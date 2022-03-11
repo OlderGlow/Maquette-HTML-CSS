@@ -11,6 +11,64 @@
 body {
   height: 2000px;
   background: url("../img/background.jpg") no-repeat;
-  background-color: #0A1C26;
+  background-color: #0a1c26;
+}
+
+main {
+  background-color: #0a1c26;
+}
+
+article {
+  margin: 0 12% 15% 12%;
+  height: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article .pair {
+  margin-left: 70px;
+}
+
+article .cardArticle {
+  width: 70%;
+}
+
+article .cardArticle .cardArticleNumber {
+  font-size: 220px;
+  font-family: "Chronicle Display";
+  font-weight: bold;
+  position: relative;
+  color: #ffffff1a;
+}
+
+article .cardArticle .cardArticleSubTitle {
+  color: #fbd784;
+}
+
+article .cardArticle .cardArticleContentPair {
+  margin: -150px 140px;
+  color: #fff;
+}
+
+article .cardArticle .cardArticleContentImpair {
+  margin: -150px 140px;
+  color: #fff;
+}
+
+article .cardArticle .cardArticleTitle {
+  font-size: 64px;
+  margin: 0;
+}
+
+article .cardArticle .cardArticleImage {
+  width: 30%;
+}
+
+article .cardArticle .cardArticleLink {
+  color: #fbd784;
 }
 /*# sourceMappingURL=index.css.map */
