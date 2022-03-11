@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,AAAA,CACA,MAAM,CAAE,MAAM,CACd,UAAU,CAAE,4BAA4B,CAAC,SAAS,CAClD,gBAAgB,CAAE,OAAO,CAC5B",
+    "sources": [
+        "../sass/index.scss",
+        "../sass/pages/_mainPage.scss"
+    ],
+    "names": [],
+    "file": "index.min.css"
+}
