@@ -1,0 +1,22 @@
+article{
+    height: 720px;
+    margin: 200px 12% 0 12%;
+    display: flex;
+    .cardArticle{
+        width: $col8;
+        height: 720px;
+        align-self: center;
+        padding-left: 150px;
+        .cardArticleNum{
+            font-size: 240px;
+            position: relative;
+            bottom: -125px;
+            left: -80px;
+            z-index: -1;
+            color: #23333B;
+        }
+    }
+    .cardArticleImg{
+        width: $col4;
+    }
+}

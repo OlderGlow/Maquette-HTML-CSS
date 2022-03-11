@@ -1,0 +1,24 @@
+footer{
+    margin: 200px 12% 120px 12%;
+    display: flex;
+    .footerInfo{
+        width: $col6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            padding-top: 15px;
+        }
+    }
+    .footerNav{
+        width: $col6;
+        display: flex;
+        justify-content: space-around;
+        li{
+            margin-top: 10px;
+        }
+    }
+    .footerInfoCopyright{
+        color: gray;
+    }
+}
