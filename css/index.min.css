@@ -1,2 +1,2 @@
-body{height:2000px;background:url("../img/background.jpg") no-repeat;background-color:#0A1C26}
+@font-face{font-family:'Chronicle Display';src:url("/font/Chronicle Display Roman.otf")}@font-face{font-family:'Gilroy';src:url("/font/Gilroy-Light.otf")}body{height:2000px;background:url("../img/background.jpg") no-repeat;background-color:#0A1C26}
 /*# sourceMappingURL=index.min.css.map */

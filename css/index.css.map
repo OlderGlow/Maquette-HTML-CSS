@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,4BAA4B,CAAC,SAAS;EAClD,gBAAgB,EAAE,OAAO;CAC5B",
+    "mappings": "ACAA,UAAU;EACN,WAAW,EAAE,mBAAmB;EAChC,GAAG,EAAE,wCAA0C;;;AAGnD,UAAU;EACN,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,6BAA6B;;;ACPtC,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,4BAA4B,CAAC,SAAS;EAClD,gBAAgB,EAAE,OAAO;CAC5B",
     "sources": [
         "../sass/index.scss",
+        "../sass/base/_font.scss",
         "../sass/pages/_mainPage.scss"
     ],
     "names": [],
