@@ -59,14 +59,23 @@ article .cardArticleImg {
 }
 
 footer {
-  margin: 200px 12% 0px 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container {
+  width: 75%;
   padding-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .footerInfo {
+footer .container .footerInfo {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,18 +89,18 @@ footer .footerInfo {
           justify-content: space-between;
 }
 
-footer .footerInfo h2 {
+footer .container .footerInfo h2 {
   font-size: 32px;
   margin-bottom: 24px;
   font-family: 'Chronicle Display';
 }
 
-footer .footerInfo p {
+footer .container .footerInfo p {
   padding-top: 15px;
   font-size: 18px;
 }
 
-footer .footerNav {
+footer .container .footerNav {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,17 +109,17 @@ footer .footerNav {
       justify-content: space-around;
 }
 
-footer .footerNav h4 {
+footer .container .footerNav h4 {
   font-size: 24px;
   margin-bottom: 24px;
 }
 
-footer .footerNav li {
+footer .container .footerNav li {
   margin-bottom: 16px;
   font-size: 18px;
 }
 
-footer .footerInfoBottom {
+footer .container .footerInfoBottom {
   color: #858E92;
 }
 
