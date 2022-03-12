@@ -1,0 +1,26 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 58px;
+}
+
+.navbarNav ul{
+    display: flex;
+    justify-content: space-around;
+    li{
+        margin-right: 40px;
+    }
+}
+
+.navbarAccountIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.navbarRight{
+    display: flex;
+    p{
+        margin-left: 10px;
+    }
+}

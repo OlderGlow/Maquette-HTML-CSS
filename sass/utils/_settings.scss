@@ -1,0 +1,86 @@
+// Font
+
+$size-min: 18px;
+
+// Colors
+
+$title: #FBD784;
+$NumberColor: #23333B;
+
+
+// Variables
+
+$col1: 8.33%;
+$col2: 16.66%;
+$col3: 25%;
+$col4: 33.33%;
+$col5: 41.66%;
+$col6: 50%;
+$col7: 58.33%;
+$col8: 66.66%;
+$col9: 75%;
+$col10: 83.33%;
+$col11: 91.66%;
+$col12: 100%;
+
+// Breakpoint
+
+$breakpoint:(
+    small-phone: 500px,
+    phone: 800px,
+    tablette: 1025px,
+    ecran: 1285px,
+);
+
+// Mixin
+
+@mixin small-phone {
+    @media screen and (max-width: map-get($breakpoint, small-phone)){
+        @content
+    }
+};
+
+@mixin phone {
+    @media screen and (max-width: map-get($breakpoint, phone)) {
+        @content
+    }
+};
+
+@mixin tablette {
+    @media screen and (max-width: map-get($breakpoint, tablette)) {
+        @content
+    }
+};
+
+@mixin ecran {
+    @media screen and (max-width: map-get($breakpoint, ecran)) {
+        @content
+    }    
+};
+
+// General
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Gilroy';
+    font-size: $size-min;
+}
+
+.titleSite{
+    font-size: 32px;
+    font-family: 'Chronicle Display';
+}
+
+h4, .cardArticleLink{
+    color: $title;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

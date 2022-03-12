@@ -1,0 +1,42 @@
+footer{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: $col9;
+        padding-bottom: 120px;
+        display: flex;
+        .footerInfo{
+            width: $col6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .footerInfoTop{
+                width: $col5;
+                .titleSite{
+                    margin-bottom: 24px;
+                }
+                .footerInfoTopText{
+                    line-height: 32px;
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        .footerNav{
+            width: $col6;
+            display: flex;
+            justify-content: space-around;
+            h4{
+                font-size: 24px;
+                margin-bottom: 24px;
+                font-weight: bold;
+            }
+            li{
+                margin-bottom: 16px;
+            }
+        }
+        .footerInfoBottom{
+            opacity: 0.5;
+        }
+    }
+}

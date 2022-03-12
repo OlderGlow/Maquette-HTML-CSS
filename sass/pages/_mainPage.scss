@@ -5,6 +5,7 @@ body {
   height: 2000px;
   background: url("../img/background.jpg") no-repeat;
   background-color: #0a1c26;
+  transition: all 1s ease-out;
 }
 main {
   // margin: 0 12%;
@@ -17,11 +18,15 @@ main {
   width: 75%;
 }
 
+.wrapper{
+  margin: 0 112px 0 112px;
+}
+
+
 article {
   display: flex;
   // justify-content: space-between;
   margin-bottom: 15%;
-
   .cardArticle {
     width: 62%;
     position: relative;

@@ -1,3 +1,13 @@
+@import "./utils/settings";
+@import "./utils/keyframes";
+
 @import "./base/font";
 
+@import "./composants/article";
+@import "./composants/footer";
+@import "./composants/navbar";
+@import "./composants/header";
+
 @import "./pages/mainPage";
+
+
