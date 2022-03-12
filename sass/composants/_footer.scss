@@ -10,15 +10,17 @@ footer{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            h2{
-                font-size: 32px;
-                margin-bottom: 24px;
-                font-family: 'Chronicle Display';
+            .footerInfoTop{
+                width: $col5;
+                .titleSite{
+                    margin-bottom: 24px;
+                }
+                .footerInfoTopText{
+                    line-height: 32px;
+                    font-weight: 700;
+                }
             }
-            p{
-                padding-top: 15px;
-                font-size: $size-min;
-            }
+            
         }
         .footerNav{
             width: $col6;
@@ -27,14 +29,14 @@ footer{
             h4{
                 font-size: 24px;
                 margin-bottom: 24px;
+                font-weight: bold;
             }
             li{
                 margin-bottom: 16px;
-                font-size: $size-min;
             }
         }
         .footerInfoBottom{
-            color: #858E92;
+            opacity: 0.5;
         }
     }
 }

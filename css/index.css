@@ -3,6 +3,12 @@
   margin: 0;
   color: white;
   font-family: 'Gilroy';
+  font-size: 18px;
+}
+
+.titleSite {
+  font-size: 32px;
+  font-family: 'Chronicle Display';
 }
 
 h4, .cardArticleLink {
@@ -14,7 +20,6 @@ li {
 }
 
 a {
-  color: white;
   text-decoration: none;
 }
 
@@ -89,15 +94,17 @@ footer .container .footerInfo {
           justify-content: space-between;
 }
 
-footer .container .footerInfo h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
-  font-family: 'Chronicle Display';
+footer .container .footerInfo .footerInfoTop {
+  width: 41.66%;
 }
 
-footer .container .footerInfo p {
-  padding-top: 15px;
-  font-size: 18px;
+footer .container .footerInfo .footerInfoTop .titleSite {
+  margin-bottom: 24px;
+}
+
+footer .container .footerInfo .footerInfoTop .footerInfoTopText {
+  line-height: 32px;
+  font-weight: 700;
 }
 
 footer .container .footerNav {
@@ -112,15 +119,15 @@ footer .container .footerNav {
 footer .container .footerNav h4 {
   font-size: 24px;
   margin-bottom: 24px;
+  font-weight: bold;
 }
 
 footer .container .footerNav li {
   margin-bottom: 16px;
-  font-size: 18px;
 }
 
 footer .container .footerInfoBottom {
-  color: #858E92;
+  opacity: 0.5;
 }
 
 body {

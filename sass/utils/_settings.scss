@@ -65,6 +65,12 @@ $breakpoint:(
     margin: 0;
     color: white;
     font-family: 'Gilroy';
+    font-size: $size-min;
+}
+
+.titleSite{
+    font-size: 32px;
+    font-family: 'Chronicle Display';
 }
 
 h4, .cardArticleLink{
@@ -76,6 +82,5 @@ li{
 }
 
 a{
-    color: white;
     text-decoration: none;
 }
