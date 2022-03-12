@@ -2,9 +2,10 @@
   padding: 0;
   margin: 0;
   color: white;
+  font-family: 'Gilroy';
 }
 
-h3, h4 {
+h4, .cardArticleLink {
   color: #FBD784;
 }
 
@@ -58,7 +59,8 @@ article .cardArticleImg {
 }
 
 footer {
-  margin: 200px 12% 120px 12%;
+  margin: 200px 12% 0px 12%;
+  padding-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,8 +80,15 @@ footer .footerInfo {
           justify-content: space-between;
 }
 
+footer .footerInfo h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-family: 'Chronicle Display';
+}
+
 footer .footerInfo p {
   padding-top: 15px;
+  font-size: 18px;
 }
 
 footer .footerNav {
@@ -91,12 +100,18 @@ footer .footerNav {
       justify-content: space-around;
 }
 
-footer .footerNav li {
-  margin-top: 10px;
+footer .footerNav h4 {
+  font-size: 24px;
+  margin-bottom: 24px;
 }
 
-footer .footerInfoCopyright {
-  color: gray;
+footer .footerNav li {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+footer .footerInfoBottom {
+  color: #858E92;
 }
 
 body {

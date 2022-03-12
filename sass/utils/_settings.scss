@@ -1,10 +1,11 @@
 // Font
 
-$size-min: 14px;
+$size-min: 18px;
 
 // Colors
 
 $title: #FBD784;
+$NumberColor: #23333B;
 
 
 // Variables
@@ -63,9 +64,10 @@ $breakpoint:(
     padding: 0;
     margin: 0;
     color: white;
+    font-family: 'Gilroy';
 }
 
-h3, h4{
+h4, .cardArticleLink{
     color: $title;
 }
 
