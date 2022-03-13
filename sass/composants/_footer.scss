@@ -1,53 +1,49 @@
-footer {
+.footerContainer {
+    width: $col9;
+    padding-bottom: 120px;
     display: flex;
-    justify-content: center;
-    .container {
-        width: $col9;
-        padding-bottom: 120px;
+    .footerInfo {
+        width: 60.343%;
         display: flex;
-        .footerInfo {
-            width: $col6;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            .footerInfoTop {
-                width: $col5;
-                .titleSite {
-                    margin-bottom: 24px;
-                }
-                .footerInfoTopText {
-                    line-height: 32px;
-                    font-weight: 700;
-                    font-family: 'Gilroy Bold';
-                    font-weight: 100;
-                }
-            }
-
-        }
-        .footerNav {
-            width: $col6;
-            display: flex;
-            justify-content: space-around;
-            h4 {
-                font-size: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+        .footerInfoTop {
+            width: $col4;
+            .titleSite {
                 margin-bottom: 24px;
-                font-family: 'Gilroy Bold';
-                font-weight: 100;
             }
-            li {
-                margin-bottom: 16px;
-                a{
-                    font-family: 'Gilroy';
-                    font-weight: 500;
-                }
+            .footerInfoTopText {
+                line-height: 32px;
+                font-weight: 700;
+                font-family: 'Gilroy Bold';
             }
         }
         .footerInfoBottom {
             opacity: 0.5;
+            font-family: 'Gilroy';
+            font-weight: 500;
+            line-height: 32px;
+        }
+    }
 
+    .footerNav {
+        width: 39.657%;
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            font-family: 'Gilroy Bold';
+            font-weight: 100;
+            line-height: 32px;
+        }
+        li {
+            margin-top: 16px;
+            a{
                 font-family: 'Gilroy';
                 font-weight: 500;
-            
+                line-height: 32px;
+            }
         }
     }
 }

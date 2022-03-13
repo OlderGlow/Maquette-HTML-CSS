@@ -1,0 +1,87 @@
+.articleContainer {
+    display: block;
+    width: 75%;
+    
+    .cardArticle {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .cardArticleNumber h2 {
+            font-size: 220px;
+            opacity: 0.1;
+            position: absolute;
+            top: 3%;
+            z-index: -3;
+        }
+        .cardArticleContent {
+            padding-left: 15.8%;
+            .cardArticleContentSubtitle {
+                display: flex;
+                margin-bottom: 27px;
+                height: 18px;
+                align-items: center;
+                hr {
+                    height: 2px;
+                    width: 72px;
+                    line-height: 3px;
+                    background-color: $or;
+                    border: none;
+                }
+                h4 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    padding-left: 24px;
+                    letter-spacing: 6px;
+                    font-size: $size-min;
+                }
+            }
+            .cardArticleContentTitle {
+                font-size: 64px;
+                line-height: 76.8px;
+                font-family: "Chronicle Display";
+                font-weight: normal;
+                width: 76.534%;
+            }
+            .cardArticleContentDescription {
+                margin: 27px 0;
+                line-height: 32px;
+                font-weight: bold;
+                width: 87.151%;
+                font-family: 'Gilroy Bold';
+                font-weight: 100;
+            }
+        }
+        .cardArticleContentLink {
+            a {
+                color: $or;
+                span {
+                    padding-left: 16px;
+                    color: $or;
+                }
+            }
+        }
+    }
+
+    .articlePeer {
+        display: flex;
+        justify-content: space-between;
+        .cardArticlePeer {
+            width: unset;
+            .cardArticleNumberPeer h2 {
+                left: -22%;
+            }
+            .cardArticleContentPeer {
+                padding-left: unset;
+                max-width: 632px;
+                .cardArticleContentDescription {
+                    width: unset;
+                }
+                .cardArticleContentSubtitlePeer {
+                    width: 57%;
+                }
+            }
+        }
+    }
+}

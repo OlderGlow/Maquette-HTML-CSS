@@ -4,7 +4,7 @@ $size-min: 18px;
 
 // Colors
 
-$title: #FBD784;
+$or: #FBD784;
 $NumberColor: #23333B;
 
 // Variables
@@ -27,6 +27,7 @@ $col12: 100%;
 $breakpoint: ( small-phone: 500px, phone: 800px, tablette: 1025px, ecran: 1285px, );
 
 // Mixin
+
 @mixin small-phone {
      @media screen and (max-width: map-get($breakpoint, small-phone)){
         @content
@@ -62,11 +63,12 @@ $breakpoint: ( small-phone: 500px, phone: 800px, tablette: 1025px, ecran: 1285px
 .titleSite {
     font-size: 32px;
     font-family: 'Chronicle Display';
+    line-height: 38.4px;
 }
 
 .cardArticleLink,
 h4 {
-    color: $title;
+    color: $or;
 }
 
 li {

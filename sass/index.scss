@@ -3,12 +3,15 @@
 @import "./utils/settings";
 @import "./utils/keyframes";
 
+@import "./pages/mainPage";
 
-@import "./composants/article";
-@import "./composants/footer";
 @import "./composants/navbar";
 @import "./composants/header";
+@import "./composants/article";
+@import "./composants/footer";
 
-@import "./pages/mainPage";
+
+
+
 
 

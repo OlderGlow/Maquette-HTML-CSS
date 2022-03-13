@@ -2,27 +2,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 58px;
-}
-
-.navbarNav ul {
-    display: flex;
-    justify-content: space-around;
-    li {
-        margin-right: 40px;
+    padding-top: 64px;
+    .navbarNav ul {
+        display: flex;
+        li {
+            margin-right: 40px;
+        }
     }
-}
-
-.navbarAccountIcon {
-    width: 20px;
-    height: 20px;
-}
-
-.navbarRight {
-    display: flex;
-    p {
-        margin-left: 10px;
-        font-family: 'Gilroy Bold';
-        font-weight: 100;
+    .navbarRight {
+        display: flex;
+        a {
+            margin-left: 10px;
+            font-family: 'Gilroy Bold';
+            font-weight: 100;
+        }
+        .navbarAccountIcon {
+            width: 20px;
+            height: 20px;
+            padding-top: 2px;
+        }
     }
 }

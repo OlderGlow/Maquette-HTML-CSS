@@ -1,62 +1,18 @@
-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 199px;
-}
-
 .headerLeft {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.headerLeftText {
-    font-size: $size-min;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    margin-bottom: 26px;
-}
-
-.headerSvgFirst {
-    margin-bottom: 30px;
-}
-
-.headerRight {
-    display: flex;
-    height: 240px;
-    justify-content: space-between;
-    width: 4%;
-    position: fixed;
-    left: 90.2%;
-}
-
-.headerRightText {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    justify-content: space-around;
-}
-
-.headerRightNavigation {
-    position: sticky;
-    .headerRightNavigationBackground {
-        width: 3px;
-        height: 100%;
-        border: none;
-        background: #fff;
-        opacity: 0.5;
-        position: relative;
+    .headerLeftText {
+        font-size: $size-min;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-bottom: 26px;
     }
-
-    .headerRightNavigationActive{
-        width: 3px;
-        height: 25%;
-        border: none;
-        background: #fff;
-        position: absolute;
-        z-index: 3;
+    .headerSvgFirst {
+        margin-bottom: 30px;
     }
 }
+
 .headerContainer {
     display: flex;
     flex-direction: column;
@@ -65,11 +21,9 @@ section {
     h1 {
         font-family: 'Chronicle Display';
         font-style: normal;
-        font-weight: 600;
         font-size: 88px;
         line-height: 100px;
     }
-
     h4 {
         font-family: 'Gilroy Bold';
         font-style: normal;
@@ -79,7 +33,6 @@ section {
         letter-spacing: 6px;
         text-transform: uppercase;
     }
-
     .headerInformations {
         display: flex;
         align-items: center;
@@ -88,19 +41,51 @@ section {
             height: 2px;
             width: 72px;
             line-height: 3px;
-            background-color: #fbd784;
+            background-color: $or;
             border: none;
             margin-right: 32px;
         }
     }
-
     .headerScrollText {
-        margin-right: 12px;
+        margin-right: 15px;
     }
-
     .headerScrollGroup {
         display: flex;
         align-items: center;
-        margin-top: 33px;
+        margin-top: 32px;
+    }
+}
+
+.headerRight {
+    display: flex;
+    height: 240px;
+    justify-content: space-between;
+    width: 4%;
+    position: fixed;
+    left: 91.8%;
+    .headerRightText {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        justify-content: space-around;
+    }
+    .headerRightNavigation {
+        position: sticky;
+        .headerRightNavigationBackground {
+            width: 3px;
+            height: 100%;
+            border: none;
+            background: #fff;
+            opacity: 0.5;
+            position: relative;
+        }
+        .headerRightNavigationActive{
+            width: 3px;
+            height: 25%;
+            border: none;
+            background: #fff;
+            position: absolute;
+            z-index: 3;
+        }
     }
 }
