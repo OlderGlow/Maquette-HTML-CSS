@@ -1,15 +1,17 @@
 .articleContainer {
     display: block;
     width: 75%;
-    
+
     .cardArticle {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         .cardArticleNumber h2 {
             font-size: 220px;
+            font-family: 'Gilroy Bold';
+            font-weight: 700;
             opacity: 0.1;
             position: absolute;
             top: 3%;
@@ -47,9 +49,9 @@
             .cardArticleContentDescription {
                 margin: 27px 0;
                 line-height: 32px;
-                font-weight: bold;
+                font-weight: 700;
                 width: 87.151%;
-                font-family: 'Gilroy Bold';
+                font-family: 'Gilroy';
                 font-weight: 100;
             }
         }

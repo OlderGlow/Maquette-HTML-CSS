@@ -5,7 +5,9 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("/font/Gilroy-Light.otf");
+  src: url("/font/gilroy-medium-webfont.woff2") format("woff2"), url("/font/gilroy-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -13,18 +15,19 @@
   src: url("/font/Gilroy-Bold.ttf");
 }
 
-@font-face {
-  font-family: 'Gilroy Regular';
-  src: url("/font/Gilroy-Regular.ttf");
-}
-
 * {
   padding: 0;
   margin: 0;
   color: white;
-  font-family: 'Gilroy Bold';
-  font-weight: 100;
+  font-family: 'Gilroy';
+  font-weight: 700;
   font-size: 18px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .titleSite {
@@ -50,12 +53,16 @@ body {
   height: 2000px;
   background: url("../img/background.jpg") no-repeat;
   background-color: #0a1c26;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (min-width: 1970px) {
+  body {
+    background-size: cover;
+  }
 }
 
 .wrapper {
@@ -84,6 +91,12 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 1970px) {
+  main {
+    padding-top: 970px;
+  }
 }
 
 article {
@@ -135,8 +148,8 @@ footer {
 
 .navbarContainer .navbarRight a {
   margin-left: 10px;
-  font-family: 'Gilroy Bold';
-  font-weight: 100;
+  font-family: 'Gilroy';
+  font-weight: 700;
 }
 
 .navbarContainer .navbarRight .navbarAccountIcon {
@@ -191,9 +204,9 @@ footer {
 }
 
 .headerContainer h4 {
-  font-family: 'Gilroy Bold';
+  font-family: 'Gilroy';
   font-style: normal;
-  font-weight: 100;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 6px;
@@ -303,6 +316,8 @@ footer {
 
 .articleContainer .cardArticle .cardArticleNumber h2 {
   font-size: 220px;
+  font-family: 'Gilroy Bold';
+  font-weight: 700;
   opacity: 0.1;
   position: absolute;
   top: 3%;
@@ -351,9 +366,9 @@ footer {
 .articleContainer .cardArticle .cardArticleContent .cardArticleContentDescription {
   margin: 27px 0;
   line-height: 32px;
-  font-weight: bold;
+  font-weight: 700;
   width: 87.151%;
-  font-family: 'Gilroy Bold';
+  font-family: 'Gilroy';
   font-weight: 100;
 }
 
@@ -419,7 +434,7 @@ footer {
 }
 
 .footerContainer .footerInfo .footerInfoTop {
-  width: 33.33%;
+  width: 41.66%;
 }
 
 .footerContainer .footerInfo .footerInfoTop .titleSite {
@@ -429,7 +444,7 @@ footer {
 .footerContainer .footerInfo .footerInfoTop .footerInfoTopText {
   line-height: 32px;
   font-weight: 700;
-  font-family: 'Gilroy Bold';
+  font-family: 'Gilroy';
 }
 
 .footerContainer .footerInfo .footerInfoBottom {
@@ -452,8 +467,8 @@ footer {
 .footerContainer .footerNav h4 {
   font-size: 24px;
   margin-bottom: 8px;
-  font-family: 'Gilroy Bold';
-  font-weight: 100;
+  font-family: 'Gilroy';
+  font-weight: 700;
   line-height: 32px;
 }
 

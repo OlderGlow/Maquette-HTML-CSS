@@ -8,14 +8,14 @@
         flex-direction: column;
         justify-content: space-between;
         .footerInfoTop {
-            width: $col4;
+            width: $col5;
             .titleSite {
                 margin-bottom: 24px;
             }
             .footerInfoTopText {
                 line-height: 32px;
                 font-weight: 700;
-                font-family: 'Gilroy Bold';
+                font-family: 'Gilroy';
             }
         }
         .footerInfoBottom {
@@ -33,8 +33,8 @@
         h4 {
             font-size: 24px;
             margin-bottom: 8px;
-            font-family: 'Gilroy Bold';
-            font-weight: 100;
+            font-family: 'Gilroy';
+            font-weight: 700;
             line-height: 32px;
         }
         li {

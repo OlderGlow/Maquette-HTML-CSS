@@ -24,10 +24,9 @@ $col12: 100%;
 
 // Breakpoint
 
-$breakpoint: ( small-phone: 500px, phone: 800px, tablette: 1025px, ecran: 1285px, );
+$breakpoint: ( small-phone: 500px, phone: 800px, tablette: 1025px, ecran: 1285px, biggerScreen: 1970px );
 
 // Mixin
-
 @mixin small-phone {
      @media screen and (max-width: map-get($breakpoint, small-phone)){
         @content
@@ -49,17 +48,27 @@ $breakpoint: ( small-phone: 500px, phone: 800px, tablette: 1025px, ecran: 1285px
     }
 };
 
+@mixin biggerScreen {
+    @media screen and (min-width: map-get($breakpoint, biggerScreen)){
+       @content
+   }
+};
+
 // General
 
 * {
     padding: 0;
     margin: 0;
     color: white;
-    font-family: 'Gilroy Bold';
-    font-weight: 100;
+    font-family: 'Gilroy';
+    font-weight: 700;
     font-size: $size-min;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .titleSite {
     font-size: 32px;
     font-family: 'Chronicle Display';

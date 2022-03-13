@@ -2,9 +2,11 @@ body {
     height: 2000px;
     background: url("../img/background.jpg") no-repeat;
     background-color: #0a1c26;
-    transition: all 1s ease-out;
     &::-webkit-scrollbar {
         display: none;
+    }
+    @include biggerScreen {
+        background-size: cover;
     }
 }
 
@@ -23,6 +25,9 @@ main {
     padding-top: 743px;
     display: flex;
     justify-content: center;
+    @include biggerScreen {
+        padding-top: 970px;
+    }
 }
 
 article {
