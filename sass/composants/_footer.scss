@@ -1,42 +1,53 @@
-footer{
+footer {
     display: flex;
     justify-content: center;
-    .container{
+    .container {
         width: $col9;
         padding-bottom: 120px;
         display: flex;
-        .footerInfo{
+        .footerInfo {
             width: $col6;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .footerInfoTop{
+            .footerInfoTop {
                 width: $col5;
-                .titleSite{
+                .titleSite {
                     margin-bottom: 24px;
                 }
-                .footerInfoTopText{
+                .footerInfoTopText {
                     line-height: 32px;
                     font-weight: 700;
+                    font-family: 'Gilroy Bold';
+                    font-weight: 100;
                 }
             }
-            
+
         }
-        .footerNav{
+        .footerNav {
             width: $col6;
             display: flex;
             justify-content: space-around;
-            h4{
+            h4 {
                 font-size: 24px;
                 margin-bottom: 24px;
-                font-weight: bold;
+                font-family: 'Gilroy Bold';
+                font-weight: 100;
             }
-            li{
+            li {
                 margin-bottom: 16px;
+                a{
+                    font-family: 'Gilroy';
+                    font-weight: 500;
+                }
             }
         }
-        .footerInfoBottom{
+        .footerInfoBottom {
             opacity: 0.5;
+
+                font-family: 'Gilroy';
+                font-weight: 500;
+            
         }
     }
 }

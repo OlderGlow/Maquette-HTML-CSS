@@ -7,7 +7,6 @@ $size-min: 18px;
 $title: #FBD784;
 $NumberColor: #23333B;
 
-
 // Variables
 
 $col1: 8.33%;
@@ -25,62 +24,55 @@ $col12: 100%;
 
 // Breakpoint
 
-$breakpoint:(
-    small-phone: 500px,
-    phone: 800px,
-    tablette: 1025px,
-    ecran: 1285px,
-);
+$breakpoint: ( small-phone: 500px, phone: 800px, tablette: 1025px, ecran: 1285px, );
 
 // Mixin
-
 @mixin small-phone {
-    @media screen and (max-width: map-get($breakpoint, small-phone)){
+     @media screen and (max-width: map-get($breakpoint, small-phone)){
         @content
     }
 };
-
 @mixin phone {
-    @media screen and (max-width: map-get($breakpoint, phone)) {
+     @media screen and (max-width: map-get($breakpoint, phone)){
         @content
     }
 };
-
 @mixin tablette {
-    @media screen and (max-width: map-get($breakpoint, tablette)) {
+     @media screen and (max-width: map-get($breakpoint, tablette)){
         @content
     }
 };
-
 @mixin ecran {
-    @media screen and (max-width: map-get($breakpoint, ecran)) {
+     @media screen and (max-width: map-get($breakpoint, ecran)){
         @content
-    }    
+    }
 };
 
 // General
 
-*{
+* {
     padding: 0;
     margin: 0;
     color: white;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy Bold';
+    font-weight: 100;
     font-size: $size-min;
 }
 
-.titleSite{
+.titleSite {
     font-size: 32px;
     font-family: 'Chronicle Display';
 }
 
-h4, .cardArticleLink{
+.cardArticleLink,
+h4 {
     color: $title;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }

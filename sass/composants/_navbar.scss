@@ -1,26 +1,28 @@
-.navbarContainer{
+.navbarContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 58px;
 }
 
-.navbarNav ul{
+.navbarNav ul {
     display: flex;
     justify-content: space-around;
-    li{
+    li {
         margin-right: 40px;
     }
 }
 
-.navbarAccountIcon{
+.navbarAccountIcon {
     width: 20px;
     height: 20px;
 }
 
-.navbarRight{
+.navbarRight {
     display: flex;
-    p{
+    p {
         margin-left: 10px;
+        font-family: 'Gilroy Bold';
+        font-weight: 100;
     }
 }
