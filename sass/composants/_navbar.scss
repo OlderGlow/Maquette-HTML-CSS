@@ -1,0 +1,52 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
+    @include phone{
+        display: none;
+    }
+    .navbarNav ul {
+        display: flex;
+        li {
+            margin-right: 40px;
+        }
+    }
+    .navbarRight {
+        display: flex;
+        a {
+            margin-left: 10px;
+            font-family: 'Gilroy';
+            font-weight: 700;
+            @include phone{
+                font-size: 25px;
+            }
+        }
+        .navbarAccountIcon {
+            width: 20px;
+            height: 20px;
+            padding-top: 2px;
+        }
+    }
+}
+
+.navbarContainerPhone{
+    display: none;
+    background-color: white;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    @include phone{
+        display: flex;
+    }
+    .titleSite{
+        padding-left: 30px;
+    }
+    .navbarAccountIcon{
+        width: 30px;
+        height: 30px;
+        color: #0A1C26;
+        padding-right: 30px;
+        cursor: pointer;
+    }    
+}

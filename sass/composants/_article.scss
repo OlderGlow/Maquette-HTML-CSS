@@ -1,0 +1,138 @@
+.articleContainer {
+    display: block;
+    width: 75%;
+
+    .cardArticle {
+        display: flex;
+        justify-content: center;
+        @include tablette{
+            flex-direction: column;
+        }
+        
+        .cardArticleContent {
+            width: $col7;
+            align-self: center;
+            position: relative;
+            padding: 9%;
+            @include ecran{
+                padding: 5%;
+            }
+            @include tablette{
+                width: $col12;
+                padding: 0;
+            }
+            .cardArticleNumber h2 {
+                font-size: 220px;
+                font-family: 'Gilroy Bold';
+                font-weight: 700;
+                opacity: 0.1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -3;
+                @include ecran{
+                    font-size: 180px;
+                    left: 0;
+                    top: -11%;
+                }
+                @include tablette{
+                    top: -35%;
+                }
+            }
+            .cardArticleContentSubtitle {
+                display: flex;
+                margin-bottom: 27px;
+                height: 18px;
+                align-items: center;
+                @include ecran{
+                    margin-bottom: 10px;
+                }
+                hr {
+                    height: 2px;
+                    width: 72px;
+                    line-height: 3px;
+                    background-color: $or;
+                    border: none;
+                    @include ecran{
+                        width: 55px;
+                    }
+                }
+                h4 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    padding-left: 24px;
+                    letter-spacing: 6px;
+                    font-size: $size-min;
+                }
+            }
+            .cardArticleContentTitle {
+                font-size: 64px;
+                line-height: 76.8px;
+                font-family: "Chronicle Display";
+                font-weight: normal;
+                @include ecran{
+                    font-size: 50px;
+                }
+            }
+            .cardArticleContentDescription {
+                margin: 27px 0;
+                line-height: 32px;
+                font-weight: 700;
+                font-family: 'Gilroy';
+                @include ecran{
+                    font-weight: normal;
+                }
+            }
+            .cardArticleContentLink {
+                a {
+                    color: $or;
+                    span {
+                        padding-left: 16px;
+                        color: $or;
+                    }
+                }
+            }
+        }
+        .cardImg{
+            align-self: center;
+            width: $col5;
+            @include tablette{
+                width: $col7;
+                padding: 10% 0 15% 0;
+            }
+            @include phone{
+                width: $col10;
+                padding: 15% 0 30% 0;
+            }
+            @include small-phone{
+                width: $col12;
+                padding: 20% 0 60% 0;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }        
+    }
+
+    .cardArticlePeer{
+        @include tablette{
+            flex-direction: column-reverse;
+        }
+        .cardArticleContentPeer {
+            padding: 9% 0 9% 18% !important;
+            @include ecran{
+                padding: 5% 0 5% 10% !important;
+            }
+            @include tablette{
+                 padding: 0 !important;   
+            }
+            .cardArticleNumberPeer h2{
+                left: 10% !important;
+                @include tablette{
+                    left: 0 !important;
+                }
+            }
+        }
+    }
+}

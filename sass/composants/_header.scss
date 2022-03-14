@@ -1,0 +1,151 @@
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include phone{
+        flex-direction: row;
+        width: $col12;
+        justify-content: center;
+    }
+    .headerLeftText {
+        font-size: $size-min;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-bottom: 26px;
+        @include tablette{
+            font-weight: 100;
+        }
+        @include phone{
+            writing-mode: horizontal-tb;
+            margin: 0;
+            padding-right: 50px;
+        }
+    }
+    .headerSvgFirst {
+        margin-bottom: 30px;
+        @include phone{
+            margin-bottom: 0;
+            padding-right: 50px;
+        }
+    }
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+    margin-left: 20%;
+    @include tablette{
+        width: $col9;
+        margin-left: 10%;
+    }
+    @include phone{
+        width: $col12;
+        justify-content: center;
+        margin-left: 0;
+        align-items: center;
+        padding-bottom: 12%;
+    }
+    h1 {
+        font-family: 'Chronicle Display';
+        font-style: normal;
+        font-size: 88px;
+        line-height: 100px;
+        @include ecran{
+            font-size: 60px;
+        }
+        @include tablette{
+            font-size: 55px;
+            line-height: 70px;
+        }
+        @include phone{
+            width: $col12;
+            text-align: center;
+        }
+    }
+    h4 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        @include tablette{
+            font-size: 16px;
+        }
+    }
+    .headerInformations {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        hr {
+            height: 2px;
+            width: 72px;
+            line-height: 3px;
+            background-color: $or;
+            border: none;
+            margin-right: 32px;
+            @include tablette{
+                width: 45px;
+            }
+            @include phone{
+                width: 30px;
+            }
+        }
+    }
+    .headerScrollText {
+        margin-right: 15px;
+        @include tablette{
+            font-weight: 100;
+        }
+    }
+    .headerScrollGroup {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+    }
+}
+
+.headerRight {
+    display: flex;
+    height: 240px;
+    justify-content: space-between;
+    width: 4%;
+    position: fixed;
+    left: 91.8%;
+    @include tablette{
+        left: 89%;
+    }
+    @include phone{
+        display: none;
+    }
+    .headerRightText {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        justify-content: space-around;
+        @include tablette{
+            font-weight: 100;
+            padding-right: 35%;
+        }
+    }
+    .headerRightNavigation {
+        position: sticky;
+        .headerRightNavigationBackground {
+            width: 3px;
+            height: 100%;
+            border: none;
+            background: #fff;
+            opacity: 0.5;
+            position: relative;
+        }
+        .headerRightNavigationActive{
+            width: 3px;
+            height: 25%;
+            border: none;
+            background: #fff;
+            position: absolute;
+            z-index: 3;
+        }
+    }
+}

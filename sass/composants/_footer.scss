@@ -1,0 +1,101 @@
+.footerContainer {
+    width: $col9;
+    padding-bottom: 120px;
+    display: flex;
+    @include ecran{
+        justify-content: space-around;
+    }
+    @include tablette{
+        flex-direction: column-reverse;
+        width: $col9;
+    }
+    .footerInfo {
+        width: $col7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 18%;
+        @include ecran{
+            width: $col4;
+            padding: 0;
+        }
+        @include tablette{
+            width: $col12;
+        }
+        @include small-phone{
+            padding-top: 30%;
+        }
+        .footerInfoTop {
+            width: $col5;
+            @include ecran{
+                width: $col12;
+            }
+            @include phone{
+                text-align: center;
+            }
+            .titleSite {
+                margin-bottom: 24px;
+                @include phone{
+                    color: white;
+                    margin: 0;
+                }
+            }
+            .footerInfoTopText {
+                line-height: 32px;
+                font-weight: 700;
+                font-family: 'Gilroy';
+                @include phone{
+                    padding: 20px 0;
+                    font-weight: 100;
+                }
+            }
+        }
+        .footerInfoBottom {
+            opacity: 0.5;
+            font-family: 'Gilroy';
+            font-weight: 500;
+            line-height: 32px;
+            @include phone{
+                text-align: center;
+            }
+        }
+    }
+
+    .footerNav {
+        width: $col5;
+        display: flex;
+        justify-content: space-between;
+        @include ecran{
+            width: $col6;
+        }
+        @include tablette{
+            width: $col12;
+            padding-bottom: 15%;
+        }
+        @include phone{
+            flex-direction: column;
+            text-align: center;
+        }
+        h4 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            font-family: 'Gilroy';
+            font-weight: 700;
+            line-height: 32px;
+            @include phone{
+                padding-top: 70px;
+            }
+        }
+        li {
+            margin-top: 16px;
+            @include phone{
+                margin-top: 50px;
+            }
+            a{
+                font-family: 'Gilroy';
+                font-weight: 500;
+                line-height: 32px;
+            }
+        }
+    }
+}
