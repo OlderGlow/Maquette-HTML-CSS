@@ -1,3 +1,9 @@
 # Maquette-HTML-CSS
 
-Plop
+Projet fait en équipe:
+
+Pierre Tremblay
+
+Julien Picquet
+
+Adrien Pinheiro
