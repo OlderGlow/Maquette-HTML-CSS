@@ -25,6 +25,8 @@
   font-family: 'Gilroy Bold';
   font-weight: 100;
   font-size: 18px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .titleSite {
@@ -419,7 +421,7 @@ footer {
 }
 
 .footerContainer .footerInfo .footerInfoTop {
-  width: 33.33%;
+  width: 41.66%;
 }
 
 .footerContainer .footerInfo .footerInfoTop .titleSite {
