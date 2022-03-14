@@ -12,28 +12,51 @@ body {
 
 .wrapper {
     margin: 0 4.204%;
+    @include phone{
+        margin: 0;
+    }
 }
 
 section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 199px;
+    margin-top: 11.5%;
+    @include tablette{
+        margin-top: 31%;
+    }
+    @include phone{
+        flex-direction: column-reverse;   
+        align-content: center;
+    }
 }
 
 main {
-    padding-top: 743px;
+    padding-top: 38.5%;
     display: flex;
     justify-content: center;
     @include biggerScreen {
-        padding-top: 970px;
+        padding-top: 45%;
+    }
+    @include ecran{
+        padding-top: 74%;
+    }
+    @include tablette{
+        padding-top: 118%;               
+    }
+    @include phone{
+        padding-top: 145%;
+    }
+    @include small-phone{
+        padding-top: 230%;
     }
 }
 
 article {
     display: flex;
     margin-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 7.5%;
+    
 }
 
 footer {

@@ -24,7 +24,7 @@ $col12: 100%;
 
 // Breakpoint
 
-$breakpoint: ( small-phone: 500px, phone: 800px, tablette: 1025px, ecran: 1285px, biggerScreen: 1970px );
+$breakpoint: ( small-phone: 500px, phone: 700px, tablette: 950px, ecran: 1285px, biggerScreen: 1970px );
 
 // Mixin
 @mixin small-phone {
@@ -73,6 +73,13 @@ html {
     font-size: 32px;
     font-family: 'Chronicle Display';
     line-height: 38.4px;
+    @include tablette{
+        font-size: 28px;
+    }
+    @include phone{
+        color: #0A1C26;
+        font-size: 30px;
+    }
 }
 
 .cardArticleLink,
