@@ -2,11 +2,19 @@
     display: block;
     width: 75%;
 
+    .cardImg {
+        width: 50%;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
     .cardArticle {
-        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 75%;
 
         .cardArticleNumber h2 {
             font-size: 220px;
@@ -14,10 +22,12 @@
             font-weight: 700;
             opacity: 0.1;
             position: absolute;
-            top: 3%;
+            top: -21%;
+            left: -5%;
             z-index: -3;
         }
         .cardArticleContent {
+            position: relative;
             padding-left: 15.8%;
             .cardArticleContentSubtitle {
                 display: flex;
@@ -79,9 +89,6 @@
                 max-width: 632px;
                 .cardArticleContentDescription {
                     width: unset;
-                }
-                .cardArticleContentSubtitlePeer {
-                    width: 57%;
                 }
             }
         }

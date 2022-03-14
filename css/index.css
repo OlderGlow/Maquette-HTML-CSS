@@ -300,8 +300,16 @@ footer {
   width: 75%;
 }
 
+.articleContainer .cardImg {
+  width: 50%;
+}
+
+.articleContainer .cardImg img {
+  max-width: 100%;
+  height: auto;
+}
+
 .articleContainer .cardArticle {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,6 +320,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 75%;
 }
 
 .articleContainer .cardArticle .cardArticleNumber h2 {
@@ -320,11 +329,13 @@ footer {
   font-weight: 700;
   opacity: 0.1;
   position: absolute;
-  top: 3%;
+  top: -21%;
+  left: -5%;
   z-index: -3;
 }
 
 .articleContainer .cardArticle .cardArticleContent {
+  position: relative;
   padding-left: 15.8%;
 }
 
@@ -405,10 +416,6 @@ footer {
 
 .articleContainer .articlePeer .cardArticlePeer .cardArticleContentPeer .cardArticleContentDescription {
   width: unset;
-}
-
-.articleContainer .articlePeer .cardArticlePeer .cardArticleContentPeer .cardArticleContentSubtitlePeer {
-  width: 57%;
 }
 
 .footerContainer {
