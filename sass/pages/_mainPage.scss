@@ -2,33 +2,61 @@ body {
     height: 2000px;
     background: url("../img/background.jpg") no-repeat;
     background-color: #0a1c26;
-    transition: all 1s ease-out;
     &::-webkit-scrollbar {
         display: none;
+    }
+    @include biggerScreen {
+        background-size: cover;
     }
 }
 
 .wrapper {
     margin: 0 4.204%;
+    @include phone{
+        margin: 0;
+    }
 }
 
 section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 199px;
+    margin-top: 11.5%;
+    @include tablette{
+        margin-top: 31%;
+    }
+    @include phone{
+        flex-direction: column-reverse;   
+        align-content: center;
+    }
 }
 
 main {
-    padding-top: 743px;
+    padding-top: 38.5%;
     display: flex;
     justify-content: center;
+    @include biggerScreen {
+        padding-top: 45%;
+    }
+    @include ecran{
+        padding-top: 74%;
+    }
+    @include tablette{
+        padding-top: 118%;               
+    }
+    @include phone{
+        padding-top: 145%;
+    }
+    @include small-phone{
+        padding-top: 230%;
+    }
 }
 
 article {
     display: flex;
     margin-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 7.5%;
+    
 }
 
 footer {

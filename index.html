@@ -4,17 +4,29 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-
         <link rel="stylesheet" href="./css/index.min.css"/>
 
-        <title>Document</title>
+        <title>MNTN | Landing Page</title>
     </head>
 
     <body id="head">
         <div class="wrapper">
             <header>
+                <div class="navbarContainerPhone">
+                    <p class="titleSite">MNTN</p>
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        class="navbarAccountIcon" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="#0A1C26" 
+                        stroke-width="2">
+                        <path 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            d="M4 6h16M4 12h16M4 18h16"/>  
+                    </svg>
+                </div>
                 <div class="navbarContainer">
                     <p class="titleSite">MNTN</p>
                     <div class="navbarNav">
@@ -122,10 +134,10 @@
             <div class="articleContainer">
                 <article id="first">
                     <div class="cardArticle">
-                        <div class="cardArticleNumber">
-                            <h2>01</h2>
-                        </div>
                         <div class="cardArticleContent">
+                            <div class="cardArticleNumber">
+                                <h2>01</h2>
+                            </div>
                             <div class="cardArticleContentSubtitle cardArticleOne">
                                 <hr>
                                 <h4>Get Started</h4>
@@ -147,17 +159,17 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="cardImg"><img src="img/01.jpg" alt="Randonnée"/></div>
                     </div>
-                    <div class="cardImg"><img src="img/01.jpg" alt="Randonnée"/></div>
                 </article>
 
-                <article class="articlePeer" id="second">
-                    <div class="cardImg"><img src="img/02.jpg" alt="Montagne"/></div>
+                <article id="second">
                     <div class="cardArticle cardArticlePeer">
-                        <div class="cardArticleNumber cardArticleNumberPeer">
-                            <h2>02</h2>
-                        </div>
+                        <div class="cardImg"><img src="img/02.jpg" alt="Montagne"/></div>
                         <div class="cardArticleContent  cardArticleContentPeer">
+                            <div class="cardArticleNumber cardArticleNumberPeer">
+                                <h2>02</h2>
+                            </div>
                             <div class="cardArticleContentSubtitle cardArticleContentSubtitlePeer">
                                 <hr>
                                 <h4>Hiking Essentials</h4>
@@ -181,38 +193,38 @@
                     </div>
                 </article>
 
-                    <article id="third">
-                        <div class="cardArticle ">
+                <article id="third">
+                    <div class="cardArticle ">
+                        <div class="cardArticleContent">
                             <div class="cardArticleNumber">
                                 <h2>03</h2>
                             </div>
-                            <div class="cardArticleContent">
-                                <div class="cardArticleContentSubtitle cardArticleTree">
-                                    <hr>
-                                    <h4>Where you go is the key</h4>
-                                </div>
-                                <h3 class="cardArticleContentTitle">
-                                    Understand Your Map & Timing
-                                </h3>
-                                <p class="cardArticleContentDescription">
-                                    To start, print out the hiking guide and map. If it’s raining, throw them in a
-                                    Zip-Lock bag. Read over the guide, study the map, and have a good idea of what
-                                    to expect. I like to know what my next landmark is as I hike. For example, I’ll
-                                    read the guide and know that say, in a mile, I make a right turn at the
-                                    junction..
-                                </p>
-                                <div class="cardArticleContentLink">
-                                    <a href="#">
-                                        read more
-                                        <span> → </span>
-                                    </a>
-                                </div>
+                            <div class="cardArticleContentSubtitle cardArticleTree">
+                                <hr>
+                                <h4>Where you go is the key</h4>
+                            </div>
+                            <h3 class="cardArticleContentTitle">
+                                Understand Your Map & Timing
+                            </h3>
+                            <p class="cardArticleContentDescription">
+                                To start, print out the hiking guide and map. If it’s raining, throw them in a
+                                Zip-Lock bag. Read over the guide, study the map, and have a good idea of what
+                                to expect. I like to know what my next landmark is as I hike. For example, I’ll
+                                read the guide and know that say, in a mile, I make a right turn at the
+                                junction..
+                            </p>
+                            <div class="cardArticleContentLink">
+                                <a href="#">
+                                    read more
+                                    <span> → </span>
+                                </a>
                             </div>
                         </div>
                         <div class="cardImg"><img src="img/03.jpg" alt="Bousolle"/></div>
-                    </article>
-                </div>
-            </main>
+                    </div>
+                </article>
+            </div>
+        </main>
 
             <footer>
                 <div class="footerContainer">
@@ -226,7 +238,7 @@
 
                     <div class="footerNav">
                         <div>
-                            <h4>More On The Blog</h4>
+                            <h4>More on The Blog</h4>
                             <ul>
                                 <li>
                                     <a href="#">About MNTN</a>
